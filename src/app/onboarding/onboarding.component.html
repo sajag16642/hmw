@@ -1,12 +1,12 @@
 
-<main class='pwaSize fixed t-0 b-0 bg-light w-full HC'>
-  <div class='bg-lightblue fixed t-0 w-full pwaSize flex-sb-c p-0-5 z-10 white'>
+<main class='pwaSize fixed t-0 b-0 bg-light w-full HC' style="height: 80vh; width:40vw;margin-left: 30%;margin-top: 5%">
+  <div class='bg-lightblue fixed t-0 w-full pwaSize p-0-5 z-10 white' style="display: flex;justify-content:space-between">
       <div class='flex-fs-c'>
-          <img src='assets/images/logo.png' class='w-40'>
-          <div class='f16 white m-l-10 pointer'>Hans Metrimony</div>
+          <img src='../../assets/images/logo.png' class='w-40'>
+          <div class='f16 white m-l-10 pointer'>Hans Matrimony</div>
       </div>
 
-      <div class='flex-sb-c'>
+      <div style="display: flex">
           <div class="dropdown">
               <i class="pointer fa fa-language" data-toggle="dropdown" style="font-size: 28px;"></i>
               <ul class="dropdown-menu dropdown-menu-right t-l">
@@ -39,12 +39,20 @@
       <bot-ui></bot-ui>
   </div>
 
+  <!-- <footer *ngIf="userObj.identity_number != ''" class='pwaSize w-full p-0-5'>
+    <form [formGroup]="answer" style="display: flex">        
+        <input placeholder="Show me some profiles" formControlName="ans" id="text" class='t-l' style="width: calc(100% - 50px); margin: 0 !important; padding: 8px 15px !important; font-size: 14px !important;">
+        
+        <div style="width: 40px; margin-left: 10px;" id="send-button">
+            <div class="circle flex-c-c pointer flex-c-c" (click)="read('typed')"><i class="fa fa-paper-plane flex-c-c white" style="font-size: 25px !important; width: 40px !important; height: 40px !important;"></i></div>
+        </div>
+    </form>
+</footer>
+<footer *ngIf="userObj.identity_number==''" style="position: fixed; bottom: 10px;" class='pwaSize w-full p-0-5 flex-c-c'>
+    <button class='btn btn-blue' routerLink="/login">Login</button>
+</footer> -->
+
   <main *ngIf="1>2" class='mainBody pwaSize w-full bg-white'>
-      <div class="section m-t-10">
-          <div class="container">
-              <div class="text-center" id="show-me-profile" (click) = "showProfile('show')">Show me some profiles</div>
-          </div>
-      </div>
 
       <div style="margin-top:20px;" class="section" id="body">
           <div class="section" *ngFor ="let i of show_arr" style="margin-top:20px">
@@ -161,17 +169,5 @@
           </div>
       </div>
   </main>
-  
-  <footer *ngIf="userObj.identity_number != ''" style="position: fixed; bottom: 5px;" class='pwaSize w-full p-0-5'>
-      <form [formGroup]="answer" class='flex-sb-c w-full'>        
-          <input placeholder="Show me some profiles" formControlName="ans" id="text" class='t-l' style="width: calc(100% - 50px); margin: 0 !important; padding: 8px 15px !important; font-size: 14px !important;">
-          
-          <div style="width: 40px; margin-left: 10px;" id="send-button">
-              <div class="circle flex-c-c pointer flex-c-c" (click)="read('typed')"><i class="fa fa-paper-plane flex-c-c white" style="font-size: 25px !important; width: 40px !important; height: 40px !important;"></i></div>
-          </div>
-      </form>
-  </footer>
-  <footer *ngIf="userObj.identity_number==''" style="position: fixed; bottom: 10px;" class='pwaSize w-full p-0-5 flex-c-c'>
-      <button class='btn btn-blue' routerLink="/login">Login</button>
-  </footer>
+
 </main>
