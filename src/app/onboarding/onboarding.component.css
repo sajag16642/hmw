@@ -45,6 +45,10 @@
       margin-bottom: auto;
       margin-left: 10px;
     }
+
+    .main{
+      margin-top: 2%;
+    }
   }
   @media (min-width: 576px) {
     /*   body   */
@@ -55,6 +59,9 @@
       margin-left: 10px;
       font-size: 1.1em;
       font-weight: 600;
+    }
+    .main{
+      margin-top: 5%;
     }
     footer input {
       width: 100%;

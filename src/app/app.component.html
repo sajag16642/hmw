@@ -39,7 +39,9 @@
 </header>
 <!-- Navbar end -->
 <lib-ngx-notification></lib-ngx-notification> <!-- Notifications -->
-<button mat-raised-button id="backBtn" color="warn" (click)="back()">Back</button>
+<div *ngIf="footer">
+  <button mat-raised-button id="backBtn" color="warn" (click)="back()">Back</button>
+</div>
 <router-outlet (activate)="changeOfRoutes()"></router-outlet>
 <div class="footer" *ngIf="footer">
   <br>
