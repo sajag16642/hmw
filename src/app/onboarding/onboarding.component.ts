@@ -32,7 +32,7 @@ export class OnboardingComponent implements OnInit {
   previous_chats: any;
   user: any;
   DoNotshowfull : boolean ;
-
+  footer= false;
   botui: any;
 
   constructor(

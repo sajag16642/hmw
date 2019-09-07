@@ -289,3 +289,468 @@ html{
     
       }
 }
+
+.mat-list-item-content{
+  display : block;
+  
+}
+
+.btn-login{
+   width:70%;
+   border-radius:20px;
+   border : 2px solid #007BFF;
+   background-color: #007BFF; 
+   padding:6px;
+   color:white
+}
+
+
+.btn-next{
+  width: 40%;
+  border-radius:20px;
+  border : 2px solid #007BFF;
+  background-color: #007BFF; 
+  padding:6px;
+  color:white;
+  margin-left:10%;margin-right:10%;
+}
+
+.btn-skip{
+  width: 40%;
+  border-radius:20px;
+  border : 2px #6e6f7573;
+  background-color: #6e6f7573;
+  padding:6px;
+  color:white;
+  margin-left:auto;margin-right:auto;
+}
+
+mat-form-field{
+  height: 60px;
+}
+
+
+.w-full
+{
+  width: 100%;
+}
+
+.w-100
+{
+  width: 100px !important;
+}
+
+.pwaSize
+{
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mainBody
+{
+    position: fixed;
+    overflow: auto;
+    height: calc(100% - 100px);
+    top: 50px;
+    bottom: 50px;
+}
+
+.lightblue
+{
+    color: #34b7f1;
+}
+.bg-lightblue
+{
+    background: #34b7f1;
+}
+
+.pointer
+{
+    cursor: pointer;
+}
+
+/*********** Flex Box Start ******************/
+.flex
+{
+    display: flex;
+}
+.flex-equal-items
+{
+    display: flex;
+
+    & > *
+    {
+        flex: 1;
+    }
+}
+.flex-col
+{
+    flex-flow: column;
+}
+.flex-wrap
+{
+    flex-flow: wrap;
+}
+.inflex-sb-vc
+{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-sb-vc,
+.flex-sb-c
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flex-sb-un
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: unset;
+}
+.flex-sa-c
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.flex-sb-c-c-c
+{
+    display: flex;
+    align-items: center;
+}
+.flex-sb-fe
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.flex-sb-fs
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.flex-fs-un
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: unset;
+}
+
+.flex-hc-vc,
+.flex-c-c
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col-c-fs
+{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.flex-col-c-c
+{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+.flex-col-c-c-i
+{
+    display: flex !important;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-ew-vc
+{
+    display: flex;
+    align-items: center;
+    
+    & > *
+    {
+        flex: 1;
+    }
+}
+.flex-ew-fs
+{
+    display: flex;
+    align-items: flex-start;
+    
+    & > *
+    {
+        flex: 1;
+    }
+}
+
+.flex-fs-vc,
+.flex-fs-c
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.flex-fs-fe
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.flex-fe-c
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.flex-col-sb-fs
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.flex-col-sb-fe
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.flex-col-sb-c
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-col-sb-un
+{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.flex-h-scroll
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+
+    & > *
+    {
+        flex: 0 0 auto;
+    }
+}
+/*********** Flex Box End ******************/
+
+
+/*********** Positions Start ******************/
+.t-c
+{
+    text-align: center;
+}
+.t-l
+{
+    text-align: left;
+}
+.t-r
+{
+    text-align: right;
+}
+
+.relative
+{
+    position: relative;
+}
+
+.absolute
+{
+    position: absolute;
+}
+
+.fixed
+{
+    position: fixed;
+}
+
+.v-c
+{
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.t-0
+{
+    top: 0;
+}
+.l-0
+{
+    left: 0;
+}
+.r-0
+{
+    right: 0;
+}
+.b-0
+{
+    bottom: 0;
+}
+.b-60
+{
+    bottom: 60px;
+}
+
+.absoluteFull
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.HVC
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.VC
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.HC
+{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.transformVC
+{
+    transform: translateY(-50%);
+}
+
+.z-10
+{
+    z-index: 10;
+}
+/*********** Positions End ******************/
+
+.p-0-5
+{
+    padding: 0 5px;
+}
+
+.w-50
+{
+    width: 50px !important;
+}
+.w-40
+{
+    width: 40px;
+}
+.w-20
+{
+    width: 20px;
+}
+
+.m-l-5
+{
+    margin-left: 5px;
+}
+.m-l-10
+{
+    margin-left: 10px;
+}
+.white
+{
+    color: #fff;
+}
+.bg-white
+{
+    background: #fff;
+}
+.bg-light
+{
+    background: rgb(231, 231, 231);
+}
+
+.f16
+{
+    font-size: 16px;
+}
+
+.dropdown-menu
+{
+    li a
+    {
+        padding: 2px 5px !important;
+        color: #222 !important;
+        font-size: 15px;
+
+        .fa
+        {
+            font-size: inherit !important;
+            padding: 0 !important;
+            color: inherit !important;
+            width: 20px !important;
+            height: unset !important;
+        }
+    }
+}
+
+.btn-blue,
+.btn.btn-blue {
+    color: white;
+    background-color: #34b7f1;
+    font-size: 14px;
+    min-width: 120px;
+}
+.btn.btn-blue:hover,
+.btn-blue:hover,
+.btn-blue:focus,
+.btn-blue:active,
+.open .dropdown-toggle.btn-blue {
+    color: white;
+    background-color: #34b7f1;
+}
+
+
+*:focus{
+    outline: none !important;
+}
+
+.m-t-10
+{
+    margin-top: 10px;
+}
+.m-t-20
+{
+    margin-top: 20px;
+}
+
+.overflowY
+{
+    overflow-y: auto;
+}
