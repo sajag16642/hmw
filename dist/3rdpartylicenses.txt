@@ -449,13 +449,13 @@ ngx-notification
 
 @angular/material/core
 
-@angular/material/autocomplete
-
-@angular/material/checkbox
-
 @angular/material/select
 
-@angular/material/stepper
+@angular/material/card
+
+@angular/material/tabs
+
+@angular/material/autocomplete
 
 angular2-multiselect-dropdown
 MIT
@@ -480,10 +480,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
-
-@angular/material/card
-
-@angular/material/tabs
 
 ngx-auto-scroll
 ISC

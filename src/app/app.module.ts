@@ -42,6 +42,12 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { ContactedUserProfileComponent } from './contacted-user-profile/contacted-user-profile.component';
 import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { OnboardingComponent } from './onboarding/onboarding.component';
+import { RegisterOneComponent } from './register-one/register-one.component';
+import { RegisterTwoComponent } from './register-two/register-two.component';
+import { RegisterThreeComponent } from './register-three/register-three.component';
+import { RegisterFourComponent } from './register-four/register-four.component';
+import { RegisterFiveComponent } from './register-five/register-five.component';
+import { RegisterSixComponent } from './register-six/register-six.component';
 
 
 let config = new AuthServiceConfig([
@@ -70,7 +76,13 @@ export function provideConfig() {
     EditProfileComponent,
     ViewCentresComponent,
     ContactedUserProfileComponent,
-    OnboardingComponent
+    OnboardingComponent,
+    RegisterOneComponent,
+    RegisterTwoComponent,
+    RegisterThreeComponent,
+    RegisterFourComponent,
+    RegisterFiveComponent,
+    RegisterSixComponent
   ],
   imports: [
     AgmCoreModule.forRoot({

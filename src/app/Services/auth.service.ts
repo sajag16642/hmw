@@ -1,11 +1,12 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private http : HttpClient) { }
 
 callback(data)
 {
@@ -13,7 +14,7 @@ callback(data)
 }
 
 firstPage(data) {
-  return this.http.post('https://partner.hansmatrimony.com/api/' + 'createFirstPageProfile?' + data , null);
+  return this.http.post('https://partner.hansmatrimony.com/api/' + 'createZeroPageProfilePWA?' + data , null);
 }
 
 sendOtp(num)
@@ -32,11 +33,15 @@ verifyOtp(num)
 }
 
 secondPage(data) {
-  return this.http.post('https://partner.hansmatrimony.com/api/' + 'createSecondPageProfile', data);
+  return this.http.post('https://partner.hansmatrimony.com/api/' + 'createFirstPageProfilePWA', data);
+}
+
+newPage(data) {
+  return this.http.post('https://partner.hansmatrimony.com/api/' + 'createSecondPageProfilePWA', data);
 }
 
 thirdPage(data) {
-  return this.http.post('https://partner.hansmatrimony.com/api/' + 'createThirdPageProfile', data);
+  return this.http.post('https://partner.hansmatrimony.com/api/' + 'createThirdPageProfilePWA', data);
 }
 FourthPage(data) {
   return this.http.post('https://partner.hansmatrimony.com/api/' + 'createFourthPageProfile', data);
@@ -47,7 +52,7 @@ FifthPage(data) {
 }
 
 SixthPage(data) {
-  return this.http.post('https://partner.hansmatrimony.com/api/' + 'createSixthPageProfile', data,{responseType: 'text'});
+  return this.http.post('https://partner.hansmatrimony.com/api/' + 'createSixthPageProfile', data);
 }
 getcastes() {
   return this.http.get('https://partner.hansmatrimony.com/api/getAllCaste');
@@ -153,5 +158,4 @@ getWhatsappPoints(data)
 {
   return this.http.post<{ whatsapp_points:number}>('https://partner.hansmatrimony.com/api/getWhatsappPoint',data)  
 }
-
 }

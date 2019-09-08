@@ -79,7 +79,7 @@ export class AppComponent implements OnInit {
 
   changeOfRoutes()
   {
-     if(location.href.indexOf('dash')>-1 || location.href.indexOf('Edit')>-1 || location.href.indexOf('contactedUserProfiles')>-1 || location.href.indexOf('onboarding')>-1)
+     if(location.href.indexOf('dash')>-1 || location.href.indexOf('Edit')>-1 || location.href.indexOf('contactedUserProfiles')>-1 || location.href.indexOf('onboarding')>-1|| location.href.indexOf('register')>-1)
     { this.footer=false;
       this.isLogin='true';
       document.getElementById('navbar').style.zIndex='200';
