@@ -79,7 +79,7 @@ submitLogin(){
       console.log('iden',suc.identityNumber);
       localStorage.setItem('loggedIn','true');
       document.getElementById('closeModal').click();
-     this.router.navigateByUrl('dashboard');
+     this.router.navigateByUrl('onboarding');
     }
   },err =>{
     this.ngxNotificationService.sendMessage('Something went wrong please try again after Sometime', 'danger', 'top-right');
